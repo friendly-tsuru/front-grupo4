@@ -3,10 +3,10 @@ import { Container, Content } from './styles'
 import { 
   FaTimes, 
   FaHome, 
-  FaEnvelope, 
   FaUserAlt, 
   FaChartBar
 } from 'react-icons/fa'
+import {FiLogOut} from 'react-icons/fi'
 
 import SidebarItem from '../sidebaritem'
 
@@ -23,7 +23,7 @@ const Sidebar = ({ active }) => {
         <SidebarItem Icon={FaHome} Text="Buscar paciente" />
         <SidebarItem Icon={FaChartBar} Text="Editar Perfil" />
         <SidebarItem Icon={FaUserAlt} Text="Deletar" />
-        <SidebarItem Icon={FaEnvelope} Text="Sair" />
+        <SidebarItem Icon={FiLogOut} Text="Sair" />
       </Content>
     </Container>
   )
